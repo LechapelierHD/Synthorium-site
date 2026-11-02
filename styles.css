@@ -422,6 +422,8 @@ section p,
 .staff-member .staff-title {
   display: block;
   margin: 1rem 0 0.4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
   max-width: 60ch;
   font-family: "Unbounded", sans-serif;
   font-size: 0.82rem;
