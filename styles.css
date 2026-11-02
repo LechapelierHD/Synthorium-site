@@ -413,6 +413,32 @@ section p,
   color: var(--ink-soft);
 }
 
+.staff-member--wide {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 720px) {
+  .staff-member--wide {
+    grid-column: auto;
+  }
+}
+
+.staff-member .staff-title {
+  margin-top: 0.85rem;
+  max-width: 42ch;
+  font-family: "Unbounded", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sea-deep);
+}
+
+.staff-member .staff-bio {
+  margin-top: 0.35rem;
+  max-width: 42ch;
+}
+
 .staff-note {
   margin: 0 0 2rem;
   max-width: 42ch;
