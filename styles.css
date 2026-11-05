@@ -224,10 +224,18 @@ a { color: inherit; }
 }
 
 .lede {
-  margin: 0 auto 1.75rem;
+  margin: 0 auto 1rem;
   max-width: 36ch;
   font-size: 1.05rem;
   color: rgba(223, 243, 240, 0.76);
+}
+
+.discord-note {
+  margin: 0 auto 1.35rem;
+  max-width: 38ch;
+  font-size: 0.98rem;
+  line-height: 1.45;
+  color: rgba(223, 243, 240, 0.82);
 }
 
 .cta {
