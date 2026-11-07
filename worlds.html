@@ -11,41 +11,42 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <nav class="site-nav" aria-label="Navigation">
+<body data-i18n-title="worlds.title">
+  <nav class="site-nav" data-i18n-aria="nav.aria">
     <div class="site-nav-inner">
       <a class="brand-link" href="./">
         <img src="assets/logo.png" width="28" height="28" alt="">
         Synthorium
       </a>
       <div class="nav-tabs">
-        <a href="worlds.html" aria-current="page">Worlds</a>
-        <a href="rules.html">Rules</a>
-        <a href="staff.html">Staff</a>
-        <a href="license.html">License</a>
+        <a href="worlds.html" aria-current="page" data-i18n="nav.worlds">Worlds</a>
+        <a href="rules.html" data-i18n="nav.rules">Rules</a>
+        <a href="staff.html" data-i18n="nav.staff">Staff</a>
+        <a href="license.html" data-i18n="nav.license">License</a>
       </div>
+      <button type="button" class="lang-switch" data-lang-toggle data-i18n="lang.to" data-i18n-aria="lang.aria">FR</button>
     </div>
   </nav>
 
   <main class="page-main worlds-page">
     <header class="page-hero">
-      <p class="eyebrow">Catalog</p>
-      <h1 class="page-title">Worlds</h1>
-      <p class="page-intro">Multiworld projects connected to Synthorium.</p>
+      <p class="eyebrow" data-i18n="worlds.eyebrow">Catalog</p>
+      <h1 class="page-title" data-i18n="worlds.heading">Worlds</h1>
+      <p class="page-intro" data-i18n="worlds.intro">Multiworld projects connected to Synthorium.</p>
     </header>
 
     <div class="world-board" role="list">
       <a class="world-card" href="worlds-requiem.html" role="listitem">
         <div class="world-card-body">
           <div class="world-tags">
-            <span class="world-tag world-tag--live">Playable</span>
-            <span class="world-tag">Unstable Build</span>
-            <span class="world-tag">Beta</span>
+            <span class="world-tag world-tag--live" data-i18n="tag.playable">Playable</span>
+            <span class="world-tag" data-i18n="tag.unstable">Unstable Build</span>
+            <span class="world-tag" data-i18n="tag.beta">Beta</span>
           </div>
           <h2>Resident Evil Requiem</h2>
           <p class="world-card-meta">
             <span class="world-author">ChapelierHD</span>
-            Development updates and official patches
+            <span data-i18n="world.meta">Development updates and official patches</span>
           </p>
         </div>
         <div class="world-card-art" aria-hidden="true">
@@ -56,14 +57,14 @@
       <a class="world-card" href="worlds-village.html" role="listitem">
         <div class="world-card-body">
           <div class="world-tags">
-            <span class="world-tag world-tag--live">Playable</span>
-            <span class="world-tag">Unstable Build</span>
-            <span class="world-tag">Beta</span>
+            <span class="world-tag world-tag--live" data-i18n="tag.playable">Playable</span>
+            <span class="world-tag" data-i18n="tag.unstable">Unstable Build</span>
+            <span class="world-tag" data-i18n="tag.beta">Beta</span>
           </div>
           <h2>Resident Evil Village</h2>
           <p class="world-card-meta">
             <span class="world-author">ChapelierHD</span>
-            Development updates and official patches
+            <span data-i18n="world.meta">Development updates and official patches</span>
           </p>
         </div>
         <div class="world-card-art" aria-hidden="true">
@@ -74,13 +75,13 @@
       <div class="world-card world-card--soon" role="listitem" aria-disabled="true">
         <div class="world-card-body">
           <div class="world-tags">
-            <span class="world-tag world-tag--soon">Coming soon</span>
-            <span class="world-tag">Future-Project</span>
+            <span class="world-tag world-tag--soon" data-i18n="tag.soon">Coming soon</span>
+            <span class="world-tag" data-i18n="tag.future">Future-Project</span>
           </div>
           <h2>SILENT HILL 2 Remake</h2>
           <p class="world-card-meta">
             <span class="world-author">ChapelierHD</span>
-            Development updates and official patches
+            <span data-i18n="world.meta">Development updates and official patches</span>
           </p>
         </div>
         <div class="world-card-art" aria-hidden="true">
@@ -91,13 +92,13 @@
       <div class="world-card world-card--soon" role="listitem" aria-disabled="true">
         <div class="world-card-body">
           <div class="world-tags">
-            <span class="world-tag world-tag--soon">Coming soon</span>
-            <span class="world-tag">Dev-Build</span>
+            <span class="world-tag world-tag--soon" data-i18n="tag.soon">Coming soon</span>
+            <span class="world-tag" data-i18n="tag.dev">Dev-Build</span>
           </div>
           <h2>SpongeBob SquarePants: The Cosmic Shake</h2>
           <p class="world-card-meta">
             <span class="world-author">ChapelierHD</span>
-            Development updates and official patches
+            <span data-i18n="world.meta">Development updates and official patches</span>
           </p>
         </div>
         <div class="world-card-art" aria-hidden="true">
@@ -107,7 +108,7 @@
     </div>
 
     <footer class="site-footer">
-      <p class="disclaimer">
+      <p class="disclaimer" data-i18n-html="footer.disclaimer">
         <strong>Disclaimer:</strong> This project uses an archipelago theme
         but is fully independent and not affiliated with the official
         Archipelago Multiworld Randomizer team.
@@ -115,14 +116,15 @@
       <div class="footer-bar">
         <span class="footer-brand">Synthorium</span>
         <div class="footer-links">
-          <a href="./">Home</a>
-          <a href="rules.html">Rules</a>
-          <a href="staff.html">Staff</a>
-          <a href="license.html">License</a>
+          <a href="./" data-i18n="nav.home">Home</a>
+          <a href="rules.html" data-i18n="nav.rules">Rules</a>
+          <a href="staff.html" data-i18n="nav.staff">Staff</a>
+          <a href="license.html" data-i18n="nav.license">License</a>
           <a href="https://discord.gg/sTwHsm8y7U" target="_blank" rel="noopener">Discord</a>
         </div>
       </div>
     </footer>
   </main>
+  <script src="site.js"></script>
 </body>
 </html>

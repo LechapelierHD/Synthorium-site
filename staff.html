@@ -11,27 +11,28 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <nav class="site-nav" aria-label="Navigation">
+<body data-i18n-title="staff.title">
+  <nav class="site-nav" data-i18n-aria="nav.aria">
     <div class="site-nav-inner">
       <a class="brand-link" href="./">
         <img src="assets/logo.png" width="28" height="28" alt="">
         Synthorium
       </a>
       <div class="nav-tabs">
-        <a href="worlds.html">Worlds</a>
-        <a href="rules.html">Rules</a>
-        <a href="staff.html" aria-current="page">Staff</a>
-        <a href="license.html">License</a>
+        <a href="worlds.html" data-i18n="nav.worlds">Worlds</a>
+        <a href="rules.html" data-i18n="nav.rules">Rules</a>
+        <a href="staff.html" aria-current="page" data-i18n="nav.staff">Staff</a>
+        <a href="license.html" data-i18n="nav.license">License</a>
       </div>
+      <button type="button" class="lang-switch" data-lang-toggle data-i18n="lang.to" data-i18n-aria="lang.aria">FR</button>
     </div>
   </nav>
 
   <main class="page-main staff-page">
     <header class="page-hero">
-      <p class="eyebrow">Staff · Multiworld</p>
-      <h1 class="page-title">The Team</h1>
-      <p class="page-intro">
+      <p class="eyebrow" data-i18n="staff.eyebrow">Staff · Multiworld</p>
+      <h1 class="page-title" data-i18n="staff.heading">The Team</h1>
+      <p class="page-intro" data-i18n="staff.intro">
         Three roles, linked like worlds in a seed.
         Same goal: grow Synthorium without losing respect.
       </p>
@@ -43,35 +44,35 @@
 
     <section class="staff-grid" aria-label="Staff members">
       <article class="staff-member staff-member--wide">
-        <span class="role">Founder</span>
+        <span class="role" data-i18n="staff.founder">Founder</span>
         <h2>LechapelierHD</h2>
-        <p>World vision, project direction, and the link between multiworld islands.</p>
-        <p class="staff-title">Versatile Developer</p>
-        <p class="staff-bio">
+        <p data-i18n="staff.founderBody">World vision, project direction, and the link between multiworld islands.</p>
+        <p class="staff-title" data-i18n="staff.founderTitle">Versatile Developer</p>
+        <p class="staff-bio" data-i18n="staff.founderBio">
           Passionate and adaptable, I work with Python and Lua for scripting,
           C / C++ for low-level performance, and JavaScript, HTML and CSS for web development.
           That versatility lets me adapt quickly to any kind of technical project.
         </p>
       </article>
       <article class="staff-member">
-        <span class="role">Moderator</span>
+        <span class="role" data-i18n="staff.mod">Moderator</span>
         <h2>pf007</h2>
-        <p>Server moderation, listening to members, and keeping the space healthy.</p>
+        <p data-i18n="staff.modBody">Server moderation, listening to members, and keeping the space healthy.</p>
       </article>
       <article class="staff-member">
-        <span class="role">Co-admin</span>
+        <span class="role" data-i18n="staff.coadmin">Co-admin</span>
         <h2>Clabrus</h2>
-        <p>Organization, support, and day-to-day coordination with the team.</p>
+        <p data-i18n="staff.coadminBody">Organization, support, and day-to-day coordination with the team.</p>
       </article>
     </section>
 
-    <p class="staff-note">
+    <p class="staff-note" data-i18n="staff.note">
       A multiworld community stands thanks to the people who connect players —
       the same way a seed connects games.
     </p>
 
     <footer class="site-footer">
-      <p class="disclaimer">
+      <p class="disclaimer" data-i18n-html="footer.disclaimer">
         <strong>Disclaimer:</strong> This project uses an archipelago theme
         but is fully independent and not affiliated with the official
         Archipelago Multiworld Randomizer team.
@@ -79,14 +80,15 @@
       <div class="footer-bar">
         <span class="footer-brand">Synthorium</span>
         <div class="footer-links">
-          <a href="./">Home</a>
-          <a href="worlds.html">Worlds</a>
-          <a href="rules.html">Rules</a>
-          <a href="license.html">License</a>
+          <a href="./" data-i18n="nav.home">Home</a>
+          <a href="worlds.html" data-i18n="nav.worlds">Worlds</a>
+          <a href="rules.html" data-i18n="nav.rules">Rules</a>
+          <a href="license.html" data-i18n="nav.license">License</a>
           <a href="https://discord.gg/sTwHsm8y7U" target="_blank" rel="noopener">Discord</a>
         </div>
       </div>
     </footer>
   </main>
+  <script src="site.js"></script>
 </body>
 </html>
